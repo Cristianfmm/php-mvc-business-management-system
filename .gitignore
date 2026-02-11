@@ -1,0 +1,24 @@
+# Dependencies
+/vendor/
+
+# Environment & secrets
+.env
+config/config.php
+config/google.php
+config/db.php
+
+# Generated files
+/documents/*
+!/documents/.gitkeep
+
+# Logs & cache
+*.log
+/cache/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
