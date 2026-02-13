@@ -7,10 +7,10 @@ $(document).ready(function(){
     
     if (currentPage === 'index.html' || currentPage === '') {
         // Cargar vista de Login
-        $(".auth-body").load("views/body.html?v=1.0", function(){
+        /* $(".auth-body").load("views/body.html?v=1.0", function(){
              initLoginPage(); 
-        });
-       /*  $(".auth-body").load("views/crearfactura.html?v=1.0", function(){
+        }); */
+        $(".auth-body").load("views/crearfactura.html?v=1.0", function(){
             cargarClientes();
             cargarProductos();
             $('#fecha_emision').val(new Date().toISOString().split('T')[0]);
@@ -28,7 +28,7 @@ $(document).ready(function(){
             $('#descuento').on('input', function() {
                 calcularTotalesFactura();
             });
-       });  */
+       }); 
     } else if (currentPage === 'index2.html') {
         // Cargar vista de Registro
         $(".auth-body").load("views/auth.html?v=1.0", function(){
